@@ -1,0 +1,53 @@
+Noteworthy changes in 0.3.2
+-----------------------------------------------------------------
+
+    *	Internally use fcntl instead of FCNTL, which is deprecated
+	as of Python 2.2.
+
+    *	Small other fixes in code and docs.
+
+Noteworthy changes in 0.3.1
+-----------------------------------------------------------------
+
+    *	Thanks to a patch by drt@un.bewaff.net, fixed a nasty
+	fatal bug that manifested itself running on Linux.
+
+Noteworthy changes in 0.3.0
+-----------------------------------------------------------------
+
+    *	Renamed class GnuPGInterface.GnuPGInterface to GnuPGInterface.GnuPG.
+	Note only the class name has changed, note the module name.
+	The old class name is still supported for backwards compatbility.
+
+    *	Changed license to the GNU Lesser General Public License.
+	Previous license was GNU General Public License.
+
+    *	Added a convenience Process.wait() method.
+
+    *	Lots of documentation changes, with many more examples.
+
+    *	Lots of unittests are now used, with many thanks to the unittest
+	module: http://py-unit.sourceforge.net/
+
+
+Noteworthy changes in 0.2.1
+-----------------------------------------------------------------
+	
+    *	MAJOR BACKWARDS COMPATIBLITY BREAK:
+	Major API changes with regards to GnuPGInterface's run()
+	method have been made. A much cleaner and more sensible
+	method is now used to request which filehandles are 'created'
+	and which are 'attached'.  See the documentation and example
+	code for details.
+
+    *	The ability to have run() 'attach' GnuPG filehandles
+	to already-opened files works now. Really, it does :)
+	(I implemented more doctest tests to make sure now).
+
+
+Noteworthy changes in 0.1.0
+-----------------------------------------------------------------
+
+    *	Initial release: everything described in documentation
+	works (this is not to say the module is bug-free,
+	but that rather there are no "missing features".

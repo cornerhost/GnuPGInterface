@@ -1,0 +1,168 @@
+2002-01-11 15:24  ftobin
+
+	* NEWS: note that we have other small changes as well
+
+2002-01-11 15:22  ftobin
+
+	* GnuPGInterface.py, NEWS, setup.py: bump version to 0.3.2 and news
+
+2002-01-11 15:20  ftobin
+
+	* GnuPGInterface.py: use fcntl instead of FCNTL, since FCNTL is now
+	deprecated as of Python 2.2
+
+2001-12-21 13:01  ftobin
+
+	* GnuPGInterface.py: doc example fix
+
+2001-12-21 13:00  ftobin
+
+	* GnuPGInterface.py: small docfix
+
+2001-11-06 12:04  ftobin
+
+	* GnuPGInterface.py: use isinstance instead of type(o) == aType
+
+2001-11-06 10:27  ftobin
+
+	* THANKS: put Doobee R. Tzek into the ChangeLog for his nice
+	piping-on-Linux patch
+
+2001-11-03 02:46  ftobin
+
+	* GnuPGInterface.py, NEWS, setup.py: bunch versions, add NEWS
+
+2001-11-03 02:16  ftobin
+
+	* GnuPGInterface.py, THANKS: + # pipes are unidirectional - at
+	least on some systems + # which run python. so we have to 'turn the
+	pipe in + # the right direction' --drt@un.bewaff.net
+
+2001-11-03 02:10  ftobin
+
+	* GnuPGInterface.py: small docstring changes to make emacs friendly
+
+2001-08-25 22:27  ftobin
+
+	* NEWS: minor formatting error
+
+2001-08-25 22:05  ftobin
+
+	* README: divide installation into two steps
+
+2001-08-25 20:35  ftobin
+
+	* GnuPGInterface.py: added a doctest about generating a key, and
+	renamed _test to _run_doctests
+
+2001-08-25 20:34  ftobin
+
+	* NEWS: bumped version to 0.3.0
+
+2001-08-25 04:21  ftobin
+
+	* GnuPGInterface.py, NEWS, README, setup.py, unittests.py: lots
+	more doctests and documentation change class GnuPGInterface to
+	simply GnuPG change version to 0.3.0
+
+2001-08-25 02:18  ftobin
+
+	* MANIFEST, unittests.py: add a bunch of unittests
+
+2001-08-25 02:18  ftobin
+
+	* COPYING: Change license to LGPL
+
+2001-08-24 22:52  ftobin
+
+	* GnuPGInterface.py: clarify a little bit on how to set Options
+	instance attributes, and change Options.get_option_args() to
+	Options.get_standard_args()
+
+2001-08-21 11:42  ftobin
+
+	* GnuPGInterface.py, NEWS, setup.py: remove importing 'types', and
+	bump version to 0.2.1, since we already uploaded 0.2.0 to
+	sourceforge
+
+2001-08-21 11:13  ftobin
+
+	* GnuPGInterface.py, setup.py: bump version
+
+2001-08-21 10:37  ftobin
+
+	* GnuPGInterface.py: change some constants to using a class
+
+2001-08-21 09:24  ftobin
+
+	* GnuPGInterface.py, README, THANKS: change my email addr and add
+	some docs on using pydoc
+
+2001-08-21 09:20  ftobin
+
+	* GnuPGInterface.py, NEWS:     *   MAJOR BACKWARDS COMPATIBLITY
+	BREAK:
+		Major API changes with regards to GnuPGInterface's run()
+		method have been made. A much cleaner and more sensible
+		method is now used to request which filehandles are
+	'created'
+		and which are 'attached'.  See the documentation and
+	example
+		code for details.
+	
+	    *	The ability to have run() 'attach' GnuPG filehandles
+		to already-opened files works now. Really, it does :)
+		(I implemented more doctest tests to make sure now).
+
+2001-08-16 01:31  ftobin
+
+	* GnuPGInterface.py: We used to test if h was a FileType, but this
+	destroys abstraction, such as if there is a FileType-like object
+	which merely implements everything we need.  So now, we test for if
+	h has the value 1, and only if so do we 'generate' a filehandle for
+	it.  If h is false, then we will disregard it
+
+2001-07-10 02:25  ftobin
+
+	* GnuPGInterface.py, NEWS, setup.py: put better descriptions in
+
+2001-07-08 21:45  ftobin
+
+	* MANIFEST: add NEWS and THANKS
+
+2001-07-08 21:41  ftobin
+
+	* NEWS, THANKS: just add NEWS and THANKS, standard files for all of
+	my packages
+
+2001-07-08 21:07  ftobin
+
+	* GnuPGInterface.py, setup.py: allow for GnuPG command args to be
+	passed to run(), and put metadata into packaging info.
+
+2001-07-08 15:44  ftobin
+
+	* GnuPGInterface.py, MANIFEST: got doctest stuff working
+
+2001-07-07 21:40  ftobin
+
+	* GnuPGInterface.py, README: Put in a lot of inline docs
+
+2001-07-01 06:55  ftobin
+
+	* MANIFEST: put changelog into manifest
+
+2001-07-01 06:53  ftobin
+
+	* COPYING, GnuPGInterface.py, MANIFEST, Makefile, README, entities,
+	index.xml, setup.py: The REAL initial deposit, after accidentally
+	importing htdocs here instead :P
+
+2001-06-29 22:31  ftobin
+
+	* Makefile, entities, index.xml: Initial revision
+
+2001-06-29 22:31  ftobin
+
+	* Makefile, entities, index.xml: initial import
+
